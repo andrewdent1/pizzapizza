@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the homepage of XYZ Pizza.">
+    <title>Pizza</title>
+    <link rel="icon" type="image/png" href="icon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="z-30 w-[100vw]">    
+        <nav class="flex items-center justify-between flex-wrap bg-emerald-900 px-12 py-4 z-10">
+            <div class="flex items-center flex-no-shrink text-white mr-6 ">
+                <a href="index.html">
+                    <img src="logo-white.png" alt="" class="min-w-[200px] max-w-[15vw]">
+                </a>
+            </div>
+            <div class="block lg:hidden">
+                <button
+                    class="flex items-center px-3 py-2 border rounded text-gree border-white hover:text-blue-darkest hover:bg-white"
+                    onclick="myFunction()">
+                    <svg class="fill-white scale-[1.5] h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="w-full hidden lg:block lg:flex lg:items-center lg:w-auto" id="nav">
+                <div class="text-sm lg:flex-grow">
+                    <a href="index.html"
+                        class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4 text-lg text-white hover:underline px-4">
+                        Home
+                    </a>
+                    <div class="relative group inline-block block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4 text-lg text-white hover:underline px-4 z-50">
+                        <button onclick="toggleMenu('about-menu')" class="flex items-center">
+                            About
+                            <svg class="inline-block w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div id="about-menu" class="absolute hidden bg-emerald-900 text-white py-2 rounded-lg shadow-lg">
+                            <a href="about.html" class="block w-[200px] px-4 py-2 hover:bg-emerald-800">About Us</a>
+                            <a href="plans.html" class="block px-4 py-2 hover:bg-emerald-800">Service Plans</a>
+                            <a href="pricing.html" class="block px-4 py-2 hover:bg-emerald-800">Pricing</a>
+                        </div>
+                    </div>
+                    <div class="relative group inline-block block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4 text-lg text-white hover:underline px-4 z-50">
+                        <button onclick="toggleMenu('services-menu')" class="flex items-center">
+                            Services
+                            <svg class="inline-block w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div id="services-menu" class="absolute hidden bg-emerald-900 text-white py-2 rounded-lg shadow-lg">
+                            <a href="gardening.html" class="block w-[200px] px-4 py-2 hover:bg-emerald-800">Gardening</a>
+                            <a href="lawn-service.html" class="block px-4 py-2 hover:bg-emerald-800">Lawn Service</a>
+                            <a href="irrigation.html" class="block px-4 py-2 hover:bg-emerald-800">Irrigation</a>
+                            <a href="mulching.html" class="block px-4 py-2 hover:bg-emerald-800">Mulching</a>
+                            <a href="sod-laying.html" class="block px-4 py-2 hover:bg-emerald-800">Sod Laying</a>
+                            <a href="tree-services.html" class="block px-4 py-2 hover:bg-emerald-800">Tree Services</a>
+                            <a href="landscaping.html" class="block px-4 py-2 hover:bg-emerald-800">Landscaping</a>
+                        </div>
+                    </div>
+                    <a href="contact.html"
+                        class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4 text-lg text-white hover:underline px-4">
+                        Contact
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+</body>
